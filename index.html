@@ -6,32 +6,70 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/javascript" href="./public/js/index.js">
     <link rel="stylesheet" href="./public/css/index.css">
     <title>Document</title>
 </head>
 <body>
+    <!-- Cabecera -->
     <header>
         <h1 class="text-center">Jessica Melero</h1>
         <hr>
         <h2 class="text-center">Desarrolladora Full Stack</h2>
     </header>
+    <!-- Seccion de contacto -->
     <section class="seccionContacto">
         <div class="row text-center">
+            <!-- Icono de GitHub -->
             <div class=" col-md-6  col-sm-6  col-xs-6 github">
                 <a href="https://github.com/JessicaMelero" target="_blank">
-                    <i class='fab fa-github-alt' style='font-size: 21vw;color:white'></i>
+                    <i class="fab fa-github-alt"></i>
                 </a>
-                <h4 class="parrafoFooter">GITHUB</h4>
-                <hr class="lineaPersonalizada"></hr>
+                <h4>GITHUB</h4>
+                <button class="accordion text-center ">+ info</button>
+                <div class="panel">
+                    <br>
+                    <p class="font-weight-bold">Si quieres ver los proyectos que he realizado, pincha en el icono de GitHub</p>
+                </div>
             </div>
+            <!-- Icono de LinkedIn -->
             <div class=" col-md-6  col-sm-6  col-xs-6 linkedin">
                 <a href="https://www.linkedin.com/in/jessica-melero-martínez-2215b4125/" target="_blank">
-                    <i class='fab fa-linkedin-in' style='font-size: 21vw;color:white'></i>
+                    <i class="fab fa-linkedin-in"></i>
                 </a>
-                <h4 class="parrafoFooter">LINKEDIN</h4>
-                <hr class="lineaPersonalizada"></hr>
+                <h4>LINKEDIN</h4>
+                <button class="accordion text-center">+ info</button>
+                <div class="panel">
+                    <br>
+                    <p class="font-weight-bold">Si quieres saber mi formación y experiencia, pincha en el icono de LinkedIn</p>
+                </div>
             </div>
         </div>
     </section>
+    <!-- Footer -->
+    <footer>
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="parrafoFooter">Página de Jessica Melero - Correo electrónico: jessicameleromartinez@gmail.com</p>
+        </div>  
+    </footer>
+    <!-- Script de funcionalidad de los botones -->
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+        
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
+    </script>
 </body>
 </html>
