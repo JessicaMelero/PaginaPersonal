@@ -1,0 +1,22 @@
+body{
+    background-image: url(https://subtlepatterns.com/patterns/stardust.png); 
+}
+h1 {
+    padding-top: 10vh;
+    color: white;
+}
+h2{
+    color: white
+}
+h4{
+    color: white;
+}
+hr {
+    height: 4px;
+    width: 18em;
+    background-color: white;
+    border: solid #a4a4a4;
+}
+.seccionContacto{
+    padding-top: 10vh;
+}
